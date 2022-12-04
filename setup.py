@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='snowflake',
@@ -6,6 +6,7 @@ setup(
     description='My public snowflake package from private github repo',
     author='Md Shiful Islam',
     author_email='saifulantur@gmail.com',
-    packages=['snowflake'],
+    packages=find_packages(),
+    install_requires=["numpy", "turtles"],
     zip_safe=False
 )
